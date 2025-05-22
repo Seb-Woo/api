@@ -16,6 +16,9 @@ app.get("/temperatura", (req, res) => {
 app.get("/velocidad", (req, res) => {
   res.json({ nombre: "Sebastian", apellido: "Woo Ramirez" });
 });
+app.get("/utl", (req, res) => {
+  res.json({ escuela: "UTLD", nivel: "Universidad" });
+});
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
 });
